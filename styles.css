@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #698374;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.candle {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+#candleImg {
+    width: 100%;
+    height: auto;
+}
+
+#matchImg {
+    position: absolute;
+    width: 100px; /* Increased size */
+    height: auto;
+    top: 50%;
+    left: 90%; /* Positioned to the left 90% */
+    transform: translate(-90%, -50%);
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #matchImg {
+        width: 80px; /* Adjust size for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #matchImg {
+        width: 60px; /* Adjust size for smallest screens */
+    }
+}
